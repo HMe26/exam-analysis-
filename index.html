@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analysis and Design of Algorithms (CS 203) Exam</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="exam-container">
+      <h1>Analysis and Design of Algorithms (CS 203) - Assignment 2</h1>
+
+      <div id="timer"></div>
+      <form id="examForm">
+        <div class="question-block">
+          <p>1- The first step in the naïve greedy algorithm is?</p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q1" value="a" /> a) adding flows with
+              higher values</label
+            >
+            <label
+              ><input type="radio" name="q1" value="b" /> b) reversing flow if
+              required</label
+            >
+            <label
+              ><input type="radio" name="q1" value="c" /> c) analysing the zero
+              flow</label
+            >
+            <label
+              ><input type="radio" name="q1" value="d" /> d) calculating the
+              maximum flow using trial and error</label
+            >
+          </div>
+          <div class="answer-feedback" id="q1-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            2- Suppose you have coins of denominations 1,3 and 4. You use a
+            greedy algorithm, in which you choose the largest denomination coin
+            which is not greater than the remaining sum. For which of the
+            following sums, will the algorithm produce an optimal answer?
+          </p>
+          <div class="options">
+            <label><input type="radio" name="q2" value="a" /> a) 100</label>
+            <label><input type="radio" name="q2" value="b" /> b) 10</label>
+            <label><input type="radio" name="q2" value="c" /> c) 6</label>
+            <label><input type="radio" name="q2" value="d" /> d) 14</label>
+          </div>
+          <div class="answer-feedback" id="q2-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>3- Choose the correct statement from the following.</p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q3" value="a" /> a) branch and bound is
+              not suitable where a greedy algorithm is not applicable</label
+            >
+            <label
+              ><input type="radio" name="q3" value="b" /> b) branch and bound
+              divides a problem into at least 2 new restricted sub
+              problems</label
+            >
+            <label
+              ><input type="radio" name="q3" value="c" /> c) backtracking
+              divides a problem into at least 2 new restricted sub
+              problems</label
+            >
+            <label
+              ><input type="radio" name="q3" value="d" /> d) branch and bound is
+              more efficient than backtracking</label
+            >
+          </div>
+          <div class="answer-feedback" id="q3-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            4- Which of the following algorithms is the best approach for
+            solving Huffman codes?
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q4" value="a" /> a) greedy
+              algorithm</label
+            >
+            <label
+              ><input type="radio" name="q4" value="b" /> b) exhaustive
+              search</label
+            >
+            <label
+              ><input type="radio" name="q4" value="c" /> c) divide and conquer
+              algorithm</label
+            >
+            <label
+              ><input type="radio" name="q4" value="d" /> d) brute force
+              algorithm</label
+            >
+          </div>
+          <div class="answer-feedback" id="q4-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            5- Fractional knapsack problem is solved most efficiently by which
+            of the following algorithm?
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q5" value="a" /> a) Backtracking</label
+            >
+            <label
+              ><input type="radio" name="q5" value="b" /> b) Greedy
+              algorithm</label
+            >
+            <label
+              ><input type="radio" name="q5" value="c" /> c) Dynamic
+              programming</label
+            >
+            <label
+              ><input type="radio" name="q5" value="d" /> d) Divide and
+              conquer</label
+            >
+          </div>
+          <div class="answer-feedback" id="q5-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>6- Fractional knapsack problem is also known as</p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q6" value="a" /> a) 0/1 knapsack
+              problem</label
+            >
+            <label
+              ><input type="radio" name="q6" value="b" /> b) Continuous knapsack
+              problem</label
+            >
+            <label
+              ><input type="radio" name="q6" value="c" /> c) Divisible knapsack
+              problem</label
+            >
+            <label
+              ><input type="radio" name="q6" value="d" /> d) Non-continuous
+              knapsack problem</label
+            >
+          </div>
+          <div class="answer-feedback" id="q6-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            7- Fractional knapsack problem is solved most efficiently by which
+            of the following algorithm?
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q7" value="a" /> a) divide and
+              conquer</label
+            >
+            <label
+              ><input type="radio" name="q7" value="b" /> b) dynamic
+              programming</label
+            >
+            <label
+              ><input type="radio" name="q7" value="c" /> c) greedy
+              algorithm</label
+            >
+            <label
+              ><input type="radio" name="q7" value="d" /> d) backtracking</label
+            >
+          </div>
+          <div class="answer-feedback" id="q7-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>8- What is the objective of knapsack problem?</p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q8" value="a" /> a) Get maximum total
+              value in the knapsack</label
+            >
+            <label
+              ><input type="radio" name="q8" value="b" /> b) Get minimum total
+              value in the knapsack</label
+            >
+            <label
+              ><input type="radio" name="q8" value="c" /> c) Get maximum weight
+              in the knapsack</label
+            >
+            <label
+              ><input type="radio" name="q8" value="d" /> d) Get minimum weight
+              in the knapsack</label
+            >
+          </div>
+          <div class="answer-feedback" id="q8-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            9- Which of the following statements about 0/1 knapsack problem and
+            fractional knapsack problem is true?
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q9" value="a" /> a) In 0/1 knapsack
+              problem items are divisible and in fractional knapsack problem
+              items are non-divisible</label
+            >
+            <label
+              ><input type="radio" name="q9" value="b" /> b) Both are
+              same</label
+            >
+            <label
+              ><input type="radio" name="q9" value="c" /> c) 0/1 knapsack is
+              solved using greedy algorithm and fractional knapsack problem is
+              solved using dynamic programming</label
+            >
+            <label
+              ><input type="radio" name="q9" value="d" /> d) In 0/1 knapsack
+              problem items are non-divisible and in fractional knapsack problem
+              items are divisible</label
+            >
+          </div>
+          <div class="answer-feedback" id="q9-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>10- The time complexity of fractional knapsack problem is</p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q10" value="a" /> a) O(n log n)</label
+            >
+            <label><input type="radio" name="q10" value="b" /> b) O(n)</label>
+            <label
+              ><input type="radio" name="q10" value="c" /> c) $O(n^{2})$</label
+            >
+            <label><input type="radio" name="q10" value="d" /> d) O(nW)</label>
+          </div>
+          <div class="answer-feedback" id="q10-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>11- Fractional knapsack problem can be solved in O(n) time.</p>
+          <div class="options">
+            <label><input type="radio" name="q11" value="a" /> a) True</label>
+            <label><input type="radio" name="q11" value="b" /> b) False</label>
+          </div>
+          <div class="answer-feedback" id="q11-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            12- Given items as {value, weight} pairs {{40,20},{30,10},{20,5}}.
+            Knapsack capacity = 20. Find maximum value obtained assuming items
+            are divisible.
+          </p>
+          <div class="options">
+            <label><input type="radio" name="q12" value="a" /> a) 60</label>
+            <label><input type="radio" name="q12" value="b" /> b) 80</label>
+            <label><input type="radio" name="q12" value="c" /> c) 100</label>
+            <label><input type="radio" name="q12" value="d" /> d) 40</label>
+          </div>
+          <div class="answer-feedback" id="q12-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            13- The result of fractional knapsack problem is greater than or
+            equal to 0/1 knapsack.
+          </p>
+          <div class="options">
+            <label><input type="radio" name="q13" value="a" /> a) True</label>
+            <label><input type="radio" name="q13" value="b" /> b) False</label>
+          </div>
+          <div class="answer-feedback" id="q13-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            14- The major time taking step in fractional knapsack problem is
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q14" value="a" /> a) dividing items
+              into fractions</label
+            >
+            <label
+              ><input type="radio" name="q14" value="b" /> b) adding items to
+              knapsack</label
+            >
+            <label
+              ><input type="radio" name="q14" value="c" /> c) sorting</label
+            >
+            <label
+              ><input type="radio" name="q14" value="d" /> d) iterating through
+              sorted items</label
+            >
+          </div>
+          <div class="answer-feedback" id="q14-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            15- Given items as {value, weight} pairs {{60,20},{50,25},{20,5}}.
+            Knapsack capacity = 40. Find maximum value obtained assuming items
+            are divisible and non-divisible respectively.
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q15" value="a" /> a) 100, 80</label
+            >
+            <label
+              ><input type="radio" name="q15" value="b" /> b) 110, 70</label
+            >
+            <label
+              ><input type="radio" name="q15" value="c" /> c) 130, 110</label
+            >
+            <label
+              ><input type="radio" name="q15" value="d" /> d) 110, 80</label
+            >
+          </div>
+          <div class="answer-feedback" id="q15-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            16- Which of the following approaches should be used to find a
+            solution to activity selection problem?
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q16" value="a" /> a) Greedy
+              approach</label
+            >
+            <label
+              ><input type="radio" name="q16" value="b" /> b) Divide and
+              conquer</label
+            >
+            <label
+              ><input type="radio" name="q16" value="c" /> c) Brute force
+              approach</label
+            >
+            <label
+              ><input type="radio" name="q16" value="d" /> d) Dynamic
+              programming</label
+            >
+          </div>
+          <div class="answer-feedback" id="q16-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            17- Suppose there are two activities A and B, whose start and finish
+            times are $S_{A}$, $F_{A}$ and $S_{B}$, $F_{B}$ respectively. The
+            two activities are said to be compatible, under which of the
+            following conditions?
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q17" value="a" /> a)
+              $S_{A}=F_{B}$</label
+            >
+            <label
+              ><input type="radio" name="q17" value="b" /> b)
+              $S_{A}>F_{B}$</label
+            >
+            <label
+              ><input type="radio" name="q17" value="c" /> c) $S_{A}>=F_{B}$ or
+              $S_{B}>=F_{A}$</label
+            >
+            <label
+              ><input type="radio" name="q17" value="d" /> d) $S_{A}>=F_{B}$ and
+              $S_{B}=F_{A}$</label
+            >
+          </div>
+          <div class="answer-feedback" id="q17-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            18- Consider the following algorithm to find a solution to activity
+            selection problem. Which of the following options is most suitable
+            to fill in the blank?
+          </p>
+          <pre><code>
+Sort the given activity List
+display the first activity
+set i=1
+for j=1 to n-1 do
+    if begin time of activity[j] >= completion of activity[i] then
+        i=j
+        // BLANK HERE
+                </code></pre>
+          <div class="options">
+            <label
+              ><input type="radio" name="q18" value="a" /> a) display activity
+              i</label
+            >
+            <label
+              ><input type="radio" name="q18" value="b" /> b) display activity
+              j</label
+            >
+            <label
+              ><input type="radio" name="q18" value="c" /> c) ignore
+              activity</label
+            >
+            <label
+              ><input type="radio" name="q18" value="d" /> d) increment j</label
+            >
+          </div>
+          <div class="answer-feedback" id="q18-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            19- Consider the following number of activities with start and end
+            times mentioned below. In what sequence will the activity be
+            selected to maximize the number of activities, with no conflicts?
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Activity</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A1</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>A2</td>
+                <td>2</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>A3</td>
+                <td>1</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>A4</td>
+                <td>3</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>A5</td>
+                <td>6</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>A6</td>
+                <td>4</td>
+                <td>9</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="options">
+            <label
+              ><input type="radio" name="q19" value="a" /> a) A1, A2, A5</label
+            >
+            <label
+              ><input type="radio" name="q19" value="b" /> b) A1, A2, A3,
+              A4</label
+            >
+            <label
+              ><input type="radio" name="q19" value="c" /> c) A1, A3, A5</label
+            >
+            <label
+              ><input type="radio" name="q19" value="d" /> d) A1, A2, A5,
+              A6</label
+            >
+          </div>
+          <div class="answer-feedback" id="q19-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            20- The time complexity to find a solution to activity selection
+            problem takes O(n log n) time, when the list is not sorted.
+          </p>
+          <div class="options">
+            <label><input type="radio" name="q20" value="a" /> a) True</label>
+            <label><input type="radio" name="q20" value="b" /> b) False</label>
+          </div>
+          <div class="answer-feedback" id="q20-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            21- A solution to activity selection problem can contain two
+            activities which overlap over a certain period of time.
+          </p>
+          <div class="options">
+            <label><input type="radio" name="q21" value="a" /> a) True</label>
+            <label><input type="radio" name="q21" value="b" /> b) False</label>
+          </div>
+          <div class="answer-feedback" id="q21-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            22- Which of the following algorithms is the best approach for
+            solving Huffman codes?
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q22" value="a" /> a) exhaustive
+              search</label
+            >
+            <label
+              ><input type="radio" name="q22" value="b" /> b) greedy
+              algorithm</label
+            >
+            <label
+              ><input type="radio" name="q22" value="c" /> c) brute force
+              algorithm</label
+            >
+            <label
+              ><input type="radio" name="q22" value="d" /> d) divide and conquer
+              algorithm</label
+            >
+          </div>
+          <div class="answer-feedback" id="q22-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            23- How many printable characters does ASCII character set consist
+            of?
+          </p>
+          <div class="options">
+            <label><input type="radio" name="q23" value="a" /> a) 120</label>
+            <label><input type="radio" name="q23" value="b" /> b) 128</label>
+            <label><input type="radio" name="q23" value="c" /> c) 100</label>
+            <label><input type="radio" name="q23" value="d" /> d) 98</label>
+          </div>
+          <div class="answer-feedback" id="q23-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>24- Which bit is reserved as parity bit in ASCII set?</p>
+          <div class="options">
+            <label><input type="radio" name="q24" value="a" /> a) first</label>
+            <label
+              ><input type="radio" name="q24" value="b" /> b) seventh</label
+            >
+            <label><input type="radio" name="q24" value="c" /> c) eighth</label>
+            <label><input type="radio" name="q24" value="d" /> d) tenth</label>
+          </div>
+          <div class="answer-feedback" id="q24-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            25- How many bits are required for standard encoding if the
+            character set size is X?
+          </p>
+          <div class="options">
+            <label><input type="radio" name="q25" value="a" /> a) log X</label>
+            <label><input type="radio" name="q25" value="b" /> b) $X+1$</label>
+            <label><input type="radio" name="q25" value="c" /> c) 2X</label>
+            <label><input type="radio" name="q25" value="d" /> d) X2</label>
+          </div>
+          <div class="answer-feedback" id="q25-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            26- The length of the code is not dependent on the frequency of
+            occurrence of the characters.
+          </p>
+          <div class="options">
+            <label><input type="radio" name="q26" value="a" /> a) True</label>
+            <label><input type="radio" name="q26" value="b" /> b) False</label>
+          </div>
+          <div class="answer-feedback" id="q26-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>27- In Huffman coding, the data in the tree always occur in?</p>
+          <div class="options">
+            <label><input type="radio" name="q27" value="a" /> a) roots</label>
+            <label><input type="radio" name="q27" value="b" /> b) leaves</label>
+            <label
+              ><input type="radio" name="q27" value="c" /> c) left sub
+              trees</label
+            >
+            <label
+              ><input type="radio" name="q27" value="d" /> d) right sub
+              trees</label
+            >
+          </div>
+          <div class="answer-feedback" id="q27-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            28- From the following given tree, what is the code word for 'a'?
+          </p>
+          <img src="img28.jpg" alt="Huffman Tree for Q28" />
+          <div class="options">
+            <label><input type="radio" name="q28" value="a" /> a) 011</label>
+            <label><input type="radio" name="q28" value="b" /> b) 010</label>
+            <label><input type="radio" name="q28" value="c" /> c) 100</label>
+            <label><input type="radio" name="q28" value="d" /> d) 101</label>
+          </div>
+          <div class="answer-feedback" id="q28-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            29- From the following given tree, what is the computed code word
+            for 'c'?
+          </p>
+          <img src="img.png" alt="Huffman Tree for Q29" />
+          <div class="options">
+            <label><input type="radio" name="q29" value="a" /> a) 111</label>
+            <label><input type="radio" name="q29" value="b" /> b) 101</label>
+            <label><input type="radio" name="q29" value="c" /> c) 110</label>
+            <label><input type="radio" name="q29" value="d" /> d) 011</label>
+          </div>
+          <div class="answer-feedback" id="q29-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>30- What is the running time of Huffman coding algorithm?</p>
+          <div class="options">
+            <label><input type="radio" name="q30" value="a" /> a) O(C)</label>
+            <label
+              ><input type="radio" name="q30" value="b" /> b) O(log C)</label
+            >
+            <label
+              ><input type="radio" name="q30" value="c" /> c)
+              $O(C~log~C)$</label
+            >
+            <label
+              ><input type="radio" name="q30" value="d" /> d) O( N log C)</label
+            >
+          </div>
+          <div class="answer-feedback" id="q30-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            31- Which of the following is/are property/properties of dynamic
+            programming problem?
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q31" value="a" /> a) Optimal
+              Substructure</label
+            >
+            <label
+              ><input type="radio" name="q31" value="b" /> b) Overlapping sub
+              problems</label
+            >
+            <label
+              ><input type="radio" name="q31" value="c" /> c) Greedy
+              approach</label
+            >
+            <label
+              ><input type="radio" name="q31" value="d" /> d) Both Optimal
+              Substructure and Overlapping sub problems</label
+            >
+          </div>
+          <div class="answer-feedback" id="q31-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            32- If an optimal solution to a problem can be constructed from
+            optimal solutions to its sub problems, the problem exhibits
+            property.
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q32" value="a" /> a) overlapping sub
+              problems</label
+            >
+            <label
+              ><input type="radio" name="q32" value="b" /> b) optimal
+              substructure</label
+            >
+            <label
+              ><input type="radio" name="q32" value="c" /> c) memoization</label
+            >
+            <label><input type="radio" name="q32" value="d" /> d) greedy</label>
+          </div>
+          <div class="answer-feedback" id="q32-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            33- If a problem can be broken down into sub problems which are
+            re-used several times, the problem exhibits property.
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q33" value="a" /> a) overlapping sub
+              problems</label
+            >
+            <label
+              ><input type="radio" name="q33" value="b" /> b) optimal
+              substructure</label
+            >
+            <label
+              ><input type="radio" name="q33" value="c" /> c) memoization</label
+            >
+            <label><input type="radio" name="q33" value="d" /> d) greedy</label>
+          </div>
+          <div class="answer-feedback" id="q33-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            34- If a problem can be solved by combining optimal solutions to
+            non-overlapping problems, the strategy is called
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q34" value="a" /> a) dynamic
+              programming</label
+            >
+            <label><input type="radio" name="q34" value="b" /> b) greedy</label>
+            <label
+              ><input type="radio" name="q34" value="c" /> c) divide and
+              conquer</label
+            >
+            <label
+              ><input type="radio" name="q34" value="d" /> d) recursion</label
+            >
+          </div>
+          <div class="answer-feedback" id="q34-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            35- When dynamic programming is applied to a problem, it takes
+            considerably less time as compared to other methods that do not take
+            advantage of overlapping sub-problems.
+          </p>
+          <div class="options">
+            <label><input type="radio" name="q35" value="a" /> a) True</label>
+            <label><input type="radio" name="q35" value="b" /> b) False</label>
+          </div>
+          <div class="answer-feedback" id="q35-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            36- A greedy algorithm can be used to solve all dynamic programming
+            problems.
+          </p>
+          <div class="options">
+            <label><input type="radio" name="q36" value="a" /> a) True</label>
+            <label><input type="radio" name="q36" value="b" /> b) False</label>
+          </div>
+          <div class="answer-feedback" id="q36-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            37- In dynamic programming, the technique of storing previously
+            computed values is called
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q37" value="a" /> a) value preservation
+              property</label
+            >
+            <label
+              ><input type="radio" name="q37" value="b" /> b) value storage
+              property</label
+            >
+            <label
+              ><input type="radio" name="q37" value="c" /> c) memoization</label
+            >
+            <label
+              ><input type="radio" name="q37" value="d" /> d) mapping</label
+            >
+          </div>
+          <div class="answer-feedback" id="q37-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            38- When top-down dynamic programming approach is applied to a
+            problem, it usually
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q38" value="a" /> a) reduces both time
+              complexity and space complexity</label
+            >
+            <label
+              ><input type="radio" name="q38" value="b" /> b) reduces time
+              complexity and increases space complexity</label
+            >
+            <label
+              ><input type="radio" name="q38" value="c" /> c) increases time
+              complexity and reduces space complexity</label
+            >
+            <label
+              ><input type="radio" name="q38" value="d" /> d) increases both
+              time complexity and space complexity</label
+            >
+          </div>
+          <div class="answer-feedback" id="q38-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            39- Which of the following problems is not solved using dynamic
+            programming?
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q39" value="a" /> a) 0/1 knapsack
+              problem</label
+            >
+            <label
+              ><input type="radio" name="q39" value="b" /> b) Matrix chain
+              multiplication problem</label
+            >
+            <label
+              ><input type="radio" name="q39" value="c" /> c) Edit distance
+              problem</label
+            >
+            <label
+              ><input type="radio" name="q39" value="d" /> d) Fractional
+              knapsack problem</label
+            >
+          </div>
+          <div class="answer-feedback" id="q39-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            40- Which of the following problems should be solved using dynamic
+            programming?
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q40" value="a" /> a) Mergesort</label
+            >
+            <label
+              ><input type="radio" name="q40" value="b" /> b) Binary
+              search</label
+            >
+            <label
+              ><input type="radio" name="q40" value="c" /> c) Longest common
+              subsequence</label
+            >
+            <label
+              ><input type="radio" name="q40" value="d" /> d) Quicksort</label
+            >
+          </div>
+          <div class="answer-feedback" id="q40-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>41- Knapsack problem is an example of</p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q41" value="a" /> a) greedy
+              algorithm</label
+            >
+            <label
+              ><input type="radio" name="q41" value="b" /> b) 2D dynamic
+              programming</label
+            >
+            <label
+              ><input type="radio" name="q41" value="c" /> c) 1D dynamic
+              programming</label
+            >
+            <label
+              ><input type="radio" name="q41" value="d" /> d) divide and
+              conquer</label
+            >
+          </div>
+          <div class="answer-feedback" id="q41-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            42- Which of the following methods can be used to solve the knapsack
+            problem?
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q42" value="a" /> a) Brute force
+              algorithm</label
+            >
+            <label
+              ><input type="radio" name="q42" value="b" /> b) Recursion</label
+            >
+            <label
+              ><input type="radio" name="q42" value="c" /> c) Dynamic
+              programming</label
+            >
+            <label
+              ><input type="radio" name="q42" value="d" /> d) Brute force,
+              Recursion, and Dynamic programming</label
+            >
+          </div>
+          <div class="answer-feedback" id="q42-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            43- You have a knapsack that can carry a maximum weight of 60. There
+            are 4 items with weights { 20, 30, 40, 70} and values { 70, 80, 90,
+            200 }. What is the maximum value of items you can carry using the
+            knapsack?
+          </p>
+          <div class="options">
+            <label><input type="radio" name="q43" value="a" /> a) 160</label>
+            <label><input type="radio" name="q43" value="b" /> b) 200</label>
+            <label><input type="radio" name="q43" value="c" /> c) 170</label>
+            <label><input type="radio" name="q43" value="d" /> d) 90</label>
+          </div>
+          <div class="answer-feedback" id="q43-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            44- Which of the following problems is equivalent to 0-1 knapsack
+            problem?
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q44" value="a" /> a) You have a bag
+              that can carry a maximum weight of W. You have N items that have
+              weight {w1, w2, w3,...., wn} and value {v1, v2, v3,....,vn}. You
+              can divide the items into smaller pieces. Select the items in such
+              a way that you get maximum value.</label
+            >
+            <label
+              ><input type="radio" name="q44" value="b" /> b) You are studying
+              for an exam and you have to study N questions. The questions take
+              {t1, t2, t3,...., tn} time (in hours) and carry { m1, m2, m3,....,
+              mn} marks. You can study for a maximum of T hours. You can either
+              study a question or leave it. Select the questions in such a way
+              that you maximize your marks.</label
+            >
+            <label
+              ><input type="radio" name="q44" value="c" /> c) You have infinite
+              coins of denominations {v1,v2,v3,......,vn} and a sum S. You have
+              to find the minimum number of coins required to get the sum
+              S.</label
+            >
+            <label
+              ><input type="radio" name="q44" value="d" /> d) You have a travel
+              bag that can carry a maximum weight of 15 kg. There are 4 items
+              with weights {10, 20, 15, 40} and values {1, 2, 3, 4}. You can
+              divide the items into smaller pieces. Select the items in such a
+              way that you get maximum value.</label
+            >
+          </div>
+          <div class="answer-feedback" id="q44-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            45- What is the time complexity of the brute force algorithm used to
+            solve the knapsack problem?
+          </p>
+          <div class="options">
+            <label><input type="radio" name="q45" value="a" /> a) $O(n)$</label>
+            <label><input type="radio" name="q45" value="b" /> b) O(n!)</label>
+            <label
+              ><input type="radio" name="q45" value="c" /> c) $O(2^{n})$</label
+            >
+            <label><input type="radio" name="q45" value="d" /> d) O(n³)</label>
+          </div>
+          <div class="answer-feedback" id="q45-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>46- 0-1 knapsack problem can be solved using greedy algorithm.</p>
+          <div class="options">
+            <label><input type="radio" name="q46" value="a" /> a) True</label>
+            <label><input type="radio" name="q46" value="b" /> b) False</label>
+          </div>
+          <div class="answer-feedback" id="q46-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            47- Which of the following statements is true for any simple
+            connected graph with more than two vertices?
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q47" value="a" /> (a) No two vertices
+              have the same degree</label
+            >
+            <label
+              ><input type="radio" name="q47" value="b" /> (b) At least two
+              vertices have the same degree</label
+            >
+            <label
+              ><input type="radio" name="q47" value="c" /> (c) At least 3
+              vertices have the same degree</label
+            >
+            <label
+              ><input type="radio" name="q47" value="d" /> (d) All vertices have
+              the same degree</label
+            >
+          </div>
+          <div class="answer-feedback" id="q47-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            48- What is the number of edges in a complete graph Kn having n
+            vertices?
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q48" value="a" /> (a) $n(n+1)/2$</label
+            >
+            <label
+              ><input type="radio" name="q48" value="b" /> (b) $n(n-1)/2$</label
+            >
+            <label
+              ><input type="radio" name="q48" value="c" /> (c) $n^{2}$</label
+            >
+            <label
+              ><input type="radio" name="q48" value="d" /> d) None of the
+              above</label
+            >
+          </div>
+          <div class="answer-feedback" id="q48-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            49- What is the maximum number of edges in a bipartite graph having
+            12 vertices?
+          </p>
+          <div class="options">
+            <label><input type="radio" name="q49" value="a" /> (a) 24</label>
+            <label><input type="radio" name="q49" value="b" /> (b) 38</label>
+            <label><input type="radio" name="q49" value="c" /> (c) 36</label>
+            <label><input type="radio" name="q49" value="d" /> (d) 32</label>
+          </div>
+          <div class="answer-feedback" id="q49-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>50- What is the determinant of the adjacency matrix of C4?</p>
+          <div class="options">
+            <label><input type="radio" name="q50" value="a" /> (a) 1</label>
+            <label><input type="radio" name="q50" value="b" /> (b)-1</label>
+            <label><input type="radio" name="q50" value="c" /> (c) 0</label>
+            <label
+              ><input type="radio" name="q50" value="d" /> d) None from the
+              graph</label
+            >
+          </div>
+          <div class="answer-feedback" id="q50-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            51- Which of the following is true for any simple connected graph
+            with more than two vertices?
+          </p>
+          <div class="options">
+            <label
+              ><input type="radio" name="q51" value="a" /> (a) No two vertices
+              have the same degree</label
+            >
+            <label
+              ><input type="radio" name="q51" value="b" /> (b) At least two
+              vertices have the same degree</label
+            >
+            <label
+              ><input type="radio" name="q51" value="c" /> (c) At least 3
+              vertices have the same degree</label
+            >
+            <label
+              ><input type="radio" name="q51" value="d" /> (d) All vertices have
+              the same degree</label
+            >
+          </div>
+          <div class="answer-feedback" id="q51-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            Q2. Let $A=\{a/20,b/15,c/5,d/15,e/45\}$ be the alphabet file and its
+            frequency distribution. Using the optimal algorithm for reduction
+            the size of the file and approve it is the optimal choice
+          </p>
+          <textarea
+            name="q2_long_answer"
+            rows="10"
+            placeholder="Provide your steps for Huffman coding and prove optimality."
+          ></textarea>
+          <div class="answer-feedback" id="q2-long-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            Q3. Assume that the numbers given below represent counts of letters
+            in the hundreds from a file (similar to the CLRS example). For
+            example, in the file there will be exactly $20*100$ occurrences of
+            the letter 'a', $11*100$ occurrence of the letter 'c', etc. a: 20,
+            c:11, d:2, e: 10, o:15, m:8, s:10, t:22, u: 2
+          </p>
+          <p>
+            a) What is an optimal Huffman code based on the following set of
+            frequencies?
+          </p>
+          <ol>
+            <li>Draw the tree. Show your work at every step.</li>
+            <li>
+              Fill in the table on the right the Huffman encoding for each
+              letter.
+            </li>
+            <li>
+              We encode the file using the Huffman codes produced above. How
+              much memory will the file require with this encoding?
+            </li>
+          </ol>
+          <textarea
+            name="q3a_long_answer_tree"
+            rows="5"
+            placeholder="Describe your Huffman tree construction steps."
+          ></textarea>
+          <textarea
+            name="q3a_long_answer_memory"
+            rows="3"
+            placeholder="State the memory required in bits/bytes."
+          ></textarea>
+
+          <p>b) Fixed length encoding:</p>
+          <ol>
+            <li>
+              Fill in the table the fixed length encoding for each letter.
+            </li>
+            <li>
+              What will be the file size when the fixed-length encoding is used?
+            </li>
+          </ol>
+          <p>Table for Q3a.2 and Q3b.1:</p>
+          <table class="encoding-table">
+            <thead>
+              <tr>
+                <th>Letter</th>
+                <th>Huffman Encoding</th>
+                <th>Fixed Length Encoding</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>a</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>c</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>d</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>e</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>o</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>m</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>s</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>t</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>u</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <textarea
+            name="q3b_long_answer_fixed_size"
+            rows="3"
+            placeholder="State the file size for fixed-length encoding."
+          ></textarea>
+          <div class="answer-feedback" id="q3-long-feedback"></div>
+        </div>
+
+        <div class="question-block">
+          <p>
+            Q4. Using the optimal algorithm find the shortest distance for
+            travelling all points and return to the source for the graph.
+          </p>
+          <img src="image.png" alt="Graph for Q4" />
+          <textarea
+            name="q4_long_answer"
+            rows="10"
+            placeholder="Show your calculations for the shortest distance."
+          ></textarea>
+          <div class="answer-feedback" id="q4-long-feedback"></div>
+        </div>
+
+        <button type="submit" id="submitExam">Submit Exam</button>
+        <button type="button" id="showAnswers">Show Correct Answers</button>
+      </form>
+
+      <div id="scoreDisplay"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
